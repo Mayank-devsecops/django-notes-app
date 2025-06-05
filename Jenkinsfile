@@ -27,7 +27,7 @@ pipeline{
         stage("Deploy"){
             steps{
                 echo "And finnaly the code is gonna deploy from here"
-                sh "docker compose down --timeout 0 && docker compose up -d "
+                sh "docker compose up -d "
                 sh "docker ps"
             }
         }
