@@ -29,7 +29,7 @@ pipeline{
                 echo "And finnaly the code is gonna deploy from here"
                 sh "docker compose up -d"
                 sh "docker ps"
-                echo "Code successfully compeleted..!"
+                echo "Code compeletd successfully..!!"
             }
         }
     }
