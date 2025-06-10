@@ -27,9 +27,9 @@ pipeline{
         stage("Deploy"){
             steps{
                 echo "And finnaly the code is gonna deploy from here"
-                sh "docker compose up -d"
+                sh "docker pull mayank8765/notes-app:latest"
+                sh "docker run -d -p 8000:8000 mayank8765/notes-app:latest"
                 sh "docker ps"
-                echo "Code compeletd successfully..!!"
             }
         }
     }
